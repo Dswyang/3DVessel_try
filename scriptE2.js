@@ -712,6 +712,7 @@ function displayOcean() {
 	setTimeout(onWindowResize,1000); //wait for animation before resizing
 	
 	//Force camera to stay above waves:
+	controls.minDistance = 140;
 	controls.maxPolarAngle = PI/2-asin((ocean.amplitude/scale)/controls.minDistance);
 	scene.replaceAt(3 , seaEnv);
 	gui.open();
