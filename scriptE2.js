@@ -466,7 +466,7 @@ function preload() {
 	seaEnv = new THREE.Scene();
 	
 	new THREE.TextureLoader(manager).load(
-		'textures/waternormals.jpg',
+		'textures/waternormals.jpeg',
 		function (waterNormals) {
 			waterNormals.wrapS = waterNormals.wrapT = THREE.RepeatWrapping;
 
