@@ -624,7 +624,7 @@ function init() {
     
 	var f1 = gui.addFolder('Ocean parameters');
 		//syntax: ( object's name, 'object property's name', minimum value it can assume, max value)
-		f1.add(ocean, 'amplitude', 0, 10).onChange(function(value) {
+		f1.add(ocean, 'amplitude', 0, 16).onChange(function(value) {
 			controls.maxPolarAngle = PI/2-asin((ocean.amplitude/scale)/controls.minDistance);
             vessel.update_FRFs();
         });
